@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BlogProjesi.Models.Blog>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+buraya yazması lazım
+@foreach (var i in Model)
+{
+    <p>@i.Baslik</p>
+}
+@foreach (var item in Model)
+{
+   @item.Aciklama
+}
+
+@foreach (var item in Model)
+{
+    <p>@item.Category.KategoriAdi</p>
+}
